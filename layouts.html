@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Планировки квартир в жилом комплексе ManliHouse">
+  <title>Планировки - ManliHouse</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- ЗАГОЛОВОК И НАВИГАЦИЯ -->
+  <header>
+    <div class="header-container">
+      <div class="logo">ManliHouse</div>
+      <button class="nav-toggle">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Главная</a></li>
+          <li><a href="index.html#about">О комплексе</a></li>
+          <li><a href="layouts.html">Планировки</a></li>
+          <li><a href="index.html#construction">Ход строительства</a></li>
+          <li><a href="index.html#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ЗАГОЛОВОК СТРАНИЦЫ -->
+    <section style="background: linear-gradient(135deg, #0052cc 0%, #0039a6 100%); color: white; padding: 4rem 0; text-align: center; margin-top: 80px;">
+      <div class="container">
+        <h1>Планировки квартир</h1>
+        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem;">Выберите идеальный вариант в MANLIHOUSE</p>
+      </div>
+    </section>
+
+    <!-- СТУДИИ -->
+    <section class="alternate">
+      <div class="container">
+        <h2>Студии (49-60 м²)</h2>
+        <p>Компактные и современные студии идеальны для молодых специалистов. Цена: 910 евро/м²</p>
+        
+        <div class="cards-grid" style="margin-top: 2rem;">
+          <div class="card fade-in">
+            <div class="card-image">📐 Студия 49м²</div>
+            <div class="card-content">
+              <div class="card-title">Студия Compact</div>
+              <p class="card-text"><strong>Площадь:</strong> 49 м²</p>
+              <p class="card-text"><strong>Цена:</strong> 44,590 евро</p>
+              <div class="card-footer">
+                <span class="badge available">В наличии</span>
+                <button class="btn btn-primary" onclick="openModal('modal-studio-1')" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Подробнее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-image">📐 Студия 55м²</div>
+            <div class="card-content">
+              <div class="card-title">Студия Premium</div>
+              <p class="card-text"><strong>Площадь:</strong> 55 м²</p>
+              <p class="card-text"><strong>Цена:</strong> 50,050 евро</p>
+              <div class="card-footer">
+                <span class="badge available">В наличии</span>
+                <button class="btn btn-primary" onclick="openModal('modal-studio-2')" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Подробнее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-image">📐 Студия 60м²</div>
+            <div class="card-content">
+              <div class="card-title">Студия Luxury</div>
+              <p class="card-text"><strong>Площадь:</strong> 60 м²</p>
+              <p class="card-text"><strong>Цена:</strong> 54,600 евро</p>
+              <div class="card-footer">
+                <span class="badge reserved">Бронь</span>
+                <button class="btn btn-primary" onclick="openModal('modal-studio-3')" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1-КОМНАТНЫЕ -->
+    <section>
+      <div class="container">
+        <h2>1-комнатные квартиры (65-80 м²)</h2>
+        <p>Функциональные однокомнатные квартиры с раздельной спальней. Цена: 910 евро/м²</p>
+        
+        <div class="cards-grid" style="margin-top: 2rem;">
+          <div class="card fade-in">
+            <div class="card-image">🛏️ 1-комн. 65м²</div>
+            <div class="card-content">
+              <div class="card-title">1-Комнатная Elegant</div>
+              <p class="card-text"><strong>Площадь:</strong> 65 м²</p>
+              <p class="card-text"><strong>Цена:</strong> 59,150 евро</p>
+              <div class="card-footer">
+                <span class="badge available">В наличии</span>
+                <button class="btn btn-primary" onclick="openModal('modal-1room-1')" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Подробнее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-image">🛏️ 1-комн. 72м²</div>
+            <div class="card-content">
+              <div class="card-title">1-Комнатная Classic</div>
+              <p class="card-text"><strong>Площадь:</strong> 72 м²</p>
+              <p class="card-text"><strong>Цена:</strong> 65,520 евро</p>
+              <div class="card-footer">
+                <span class="badge available">В наличии</span>
+                <button class="btn btn-primary" onclick="openModal('modal-1room-2')" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Подробнее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-image">🛏️ 1-комн. 80м²</div>
+            <div class="card-content">
+              <div class="card-title">1-Комнатная Prestige</div>
+              <p class="card-text"><strong>Площадь:</strong> 80 м²</p>
+              <p class="card-text"><strong>Цена:</strong> 72,800 евро</p>
+              <div class="card-footer">
+                <span class="badge sold">Продано</span>
+                <button class="btn btn-primary" onclick="openModal('modal-1room-3')" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2-КОМНАТНЫЕ -->
+    <section class="alternate">
+      <div class="container">
+        <h2>2-комнатные квартиры (90-120 м²)</h2>
+        <p>Просторные двухкомнатные квартиры для семей. Цена: 910 евро/м²</p>
+        
+        <div class="cards-grid" style="margin-top: 2rem;">
+          <div class="card fade-in">
+            <div class="card-image">🛋️ 2-комн. 90м²</div>
+            <div class="card-content">
+              <div class="card-title">2-Комнатная Prime</div>
+              <p class="card-text"><strong>Площадь:</strong> 90 м²</p>
+              <p class="card-text"><strong>Цена:</strong> 81,900 евро</p>
+              <div class="card-footer">
+                <span class="badge available">В наличии</span>
+                <button class="btn btn-primary" onclick="openModal('modal-2room-1')" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Подробнее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-image">🛋️ 2-комн. 105м²</div>
+            <div class="card-content">
+              <div class="card-title">2-Комнатная Deluxe</div>
+              <p class="card-text"><strong>Площадь:</strong> 105 м²</p>
+              <p class="card-text"><strong>Цена:</strong> 95,550 евро</p>
+              <div class="card-footer">
+                <span class="badge available">В наличии</span>
+                <button class="btn btn-primary" onclick="openModal('modal-2room-2')" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Подробнее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-image">🛋️ 2-комн. 120м²</div>
+            <div class="card-content">
+              <div class="card-title">2-Комнатная Elite</div>
+              <p class="card-text"><strong>Площадь:</strong> 120 м²</p>
+              <p class="card-text"><strong>Цена:</strong> 109,200 евро</p>
+              <div class="card-footer">
+                <span class="badge reserved">Бронь</span>
+                <button class="btn btn-primary" onclick="openModal('modal-2room-3')" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-КОМНАТНЫЕ -->
+    <section>
+      <div class="container">
+        <h2>3-комнатные квартиры (130-150 м²)</h2>
+        <p>Просторные квартиры для больших семей. Цена: 910 евро/м²</p>
+        
+        <div class="cards-grid" style="margin-top: 2rem;">
+          <div class="card fade-in">
+            <div class="card-image">👨‍👩‍👧‍👦 3-комн. 130м²</div>
+            <div class="card-content">
+              <div class="card-title">3-Комнатная Royal</div>
+              <p class="card-text"><strong>Площадь:</strong> 130 м²</p>
+              <p class="card-text"><strong>Цена:</strong> 118,300 евро</p>
+              <div class="card-footer">
+                <span class="badge available">В наличии</span>
+                <button class="btn btn-primary" onclick="openModal('modal-3room-1')" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Подробнее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-image">👨‍👩‍👧‍👦 3-комн. 140м²</div>
+            <div class="card-content">
+              <div class="card-title">3-Комнатная Premium</div>
+              <p class="card-text"><strong>Площадь:</strong> 140 м²</p>
+              <p class="card-text"><strong>Цена:</strong> 127,400 евро</p>
+              <div class="card-footer">
+                <span class="badge available">В наличии</span>
+                <button class="btn btn-primary" onclick="openModal('modal-3room-2')" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Подробнее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-image">👨‍👩‍👧‍👦 3-комн. 150м²</div>
+            <div class="card-content">
+              <div class="card-title">3-Комнатная Platinum</div>
+              <p class="card-text"><strong>Площадь:</strong> 150 м²</p>
+              <p class="card-text"><strong>Цена:</strong> 136,500 евро</p>
+              <div class="card-footer">
+                <span class="badge sold">Продано</span>
+                <button class="btn btn-primary" onclick="openModal('modal-3room-3')" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПЕНТХАУСЫ -->
+    <section class="alternate">
+      <div class="container">
+        <h2>Пентхаусы (150-180 м²)</h2>
+        <p>Эксклюзивные апартаменты премиум-класса на верхних этажах с панорамным видом.</p>
+        
+        <div class="cards-grid" style="margin-top: 2rem;">
+          <div class="card fade-in">
+            <div class="card-image">🏆 Пентхаус 150м²</div>
+            <div class="card-content">
+              <div class="card-title">Пентхаус Grand</div>
+              <p class="card-text"><strong>Площадь:</strong> 150 м² + терраса 80 м²</p>
+              <p class="card-text"><strong>Цена:</strong> от 13.5 млн ₽</p>
+              <div class="card-footer">
+                <span class="badge available">В наличии</span>
+                <button class="btn btn-primary" onclick="openModal('modal-penthouse-1')" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Подробнее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card fade-in">
+            <div class="card-image">🏆 Пентхаус 180м²</div>
+            <div class="card-content">
+              <div class="card-title">Пентхаус Ultra</div>
+              <p class="card-text"><strong>Площадь:</strong> 180 м² + терраса 100 м²</p>
+              <p class="card-text"><strong>Цена:</strong> от 16.2 млн ₽</p>
+              <div class="card-footer">
+                <span class="badge reserved">Бронь</span>
+                <button class="btn btn-primary" onclick="openModal('modal-penthouse-2')" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРИЗЫВ К ДЕЙСТВИЮ -->
+    <section>
+      <div class="container" style="text-align: center;">
+        <h2>Заинтересовались?</h2>
+        <p style="font-size: 1.1rem; margin-bottom: 2rem;">Свяжитесь с нами, чтобы получить более подробную информацию или зарезервировать квартиру</p>
+        <a href="index.html#contacts" class="btn btn-primary" style="padding: 1rem 2rem; font-size: 1.1rem;">Связаться с менеджером</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- МОДАЛЬНЫЕ ОКНА -->
+  <!-- СТУДИИ -->
+  <div id="modal-studio-1" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title">Студия Compact</h2>
+      <div class="modal-body">
+        <div class="modal-property">
+          <span class="modal-label">Площадь:</span>
+          <span class="modal-value">49 м²</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Комнаты:</span>
+          <span class="modal-value">1 (студия)</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Цена:</span>
+          <span class="modal-value">44,590 евро</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Статус:</span>
+          <span class="modal-value" style="color: #155724;">✓ В наличии</span>
+        </div>
+        <p style="margin-top: 1rem; color: var(--text-gray);">
+          Компактная студия с современной планировкой, оборудованной кухней и уютной жилой зоной. 
+          Идеальна для первичного жилья и молодых специалистов. Чадыр-Лунга, Молдова.
+        </p>
+        <button class="btn btn-primary" onclick="alert('Свяжитесь с менеджером: +373 (067) 807-807')" style="width: 100%; margin-top: 1.5rem;">
+          Оставить заявку
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-studio-2" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title">Студия Premium</h2>
+      <div class="modal-body">
+        <div class="modal-property">
+          <span class="modal-label">Площадь:</span>
+          <span class="modal-value">55 м²</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Комнаты:</span>
+          <span class="modal-value">1 (студия)</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Цена:</span>
+          <span class="modal-value">50,050 евро</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Статус:</span>
+          <span class="modal-value" style="color: #155724;">✓ В наличии</span>
+        </div>
+        <p style="margin-top: 1rem; color: var(--text-gray);">
+          Стильная студия повышенного комфорта с просторной жилой зоной и отдельной ванной комнатой. 
+          Функциональная планировка обеспечивает максимум удобства.
+        </p>
+        <button class="btn btn-primary" onclick="alert('Свяжитесь с менеджером: +373 (067) 807-807')" style="width: 100%; margin-top: 1.5rem;">
+          Оставить заявку
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-studio-3" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title">Студия Luxury</h2>
+      <div class="modal-body">
+        <div class="modal-property">
+          <span class="modal-label">Площадь:</span>
+          <span class="modal-value">60 м²</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Комнаты:</span>
+          <span class="modal-value">1 (студия)</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Цена:</span>
+          <span class="modal-value">54,600 евро</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Статус:</span>
+          <span class="modal-value" style="color: #856404;">⏳ Бронь</span>
+        </div>
+        <p style="margin-top: 1rem; color: var(--text-gray);">
+          Премиум-студия с отдельной зоной отдыха и полностью оборудованной кухней. 
+          Люкс-отделка и современная техника включены в стоимость.
+        </p>
+        <button class="btn btn-primary" onclick="alert('Свяжитесь с менеджером: +373 (067) 807-807')" style="width: 100%; margin-top: 1.5rem;">
+          Оставить заявку
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1-КОМНАТНЫЕ -->
+  <div id="modal-1room-1" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title">1-Комнатная Elegant</h2>
+      <div class="modal-body">
+        <div class="modal-property">
+          <span class="modal-label">Площадь:</span>
+          <span class="modal-value">45 м²</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Комнаты:</span>
+          <span class="modal-value">1 спальня + гостиная</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Цена:</span>
+          <span class="modal-value">3.8 млн ₽</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Статус:</span>
+          <span class="modal-value" style="color: #155724;">✓ В наличии</span>
+        </div>
+        <p style="margin-top: 1rem; color: var(--text-gray);">
+          Элегантная одноквартирная квартира с отдельной спальней и просторной гостиной. 
+          Идеально подходит для молодой пары или одного человека.
+        </p>
+        <button class="btn btn-primary" onclick="alert('Свяжитесь с менеджером: +7 (925) 700-77-88')" style="width: 100%; margin-top: 1.5rem;">
+          Оставить заявку
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-1room-2" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title">1-Комнатная Classic</h2>
+      <div class="modal-body">
+        <div class="modal-property">
+          <span class="modal-label">Площадь:</span>
+          <span class="modal-value">52 м²</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Комнаты:</span>
+          <span class="modal-value">1 спальня + гостиная</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Цена:</span>
+          <span class="modal-value">4.4 млн ₽</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Статус:</span>
+          <span class="modal-value" style="color: #155724;">✓ В наличии</span>
+        </div>
+        <p style="margin-top: 1rem; color: var(--text-gray);">
+          Классическая квартира с просторной спальней и отдельной гостиной. 
+          Подойдет как для постоянного проживания, так и для инвестиций.
+        </p>
+        <button class="btn btn-primary" onclick="alert('Свяжитесь с менеджером: +7 (925) 700-77-88')" style="width: 100%; margin-top: 1.5rem;">
+          Оставить заявку
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-1room-3" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title">1-Комнатная Prestige</h2>
+      <div class="modal-body">
+        <div class="modal-property">
+          <span class="modal-label">Площадь:</span>
+          <span class="modal-value">60 м²</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Комнаты:</span>
+          <span class="modal-value">1 спальня + гостиная</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Цена:</span>
+          <span class="modal-value">5.1 млн ₽</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Статус:</span>
+          <span class="modal-value" style="color: #721c24;">✗ Продано</span>
+        </div>
+        <p style="margin-top: 1rem; color: var(--text-gray);">
+          Престижная люкс-квартира с просторной спальней и полноценной гостиной. 
+          Панорамные окна и премиум-отделка.
+        </p>
+        <button class="btn btn-secondary" onclick="alert('К сожалению, квартира уже продана.')" style="width: 100%; margin-top: 1.5rem;">
+          Предложить альтернативу
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2-КОМНАТНЫЕ -->
+  <div id="modal-2room-1" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title">2-Комнатная Prime</h2>
+      <div class="modal-body">
+        <div class="modal-property">
+          <span class="modal-label">Площадь:</span>
+          <span class="modal-value">75 м²</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Комнаты:</span>
+          <span class="modal-value">2 спальни + гостиная</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Цена:</span>
+          <span class="modal-value">5.9 млн ₽</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Статус:</span>
+          <span class="modal-value" style="color: #155724;">✓ В наличии</span>
+        </div>
+        <p style="margin-top: 1rem; color: var(--text-gray);">
+          Практичная двухкомнатная квартира идеальна для молодой семьи. 
+          Две раздельные спальни, просторная гостиная и современная кухня.
+        </p>
+        <button class="btn btn-primary" onclick="alert('Свяжитесь с менеджером: +7 (925) 700-77-88')" style="width: 100%; margin-top: 1.5rem;">
+          Оставить заявку
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-2room-2" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title">2-Комнатная Deluxe</h2>
+      <div class="modal-body">
+        <div class="modal-property">
+          <span class="modal-label">Площадь:</span>
+          <span class="modal-value">85 м²</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Комнаты:</span>
+          <span class="modal-value">2 спальни + гостиная</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Цена:</span>
+          <span class="modal-value">6.7 млн ₽</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Статус:</span>
+          <span class="modal-value" style="color: #155724;">✓ В наличии</span>
+        </div>
+        <p style="margin-top: 1rem; color: var(--text-gray);">
+          Комфортная двухкомнатная квартира повышенной площади. 
+          Просторные спальни, полноценная гостиная с видом на улицу.
+        </p>
+        <button class="btn btn-primary" onclick="alert('Свяжитесь с менеджером: +7 (925) 700-77-88')" style="width: 100%; margin-top: 1.5rem;">
+          Оставить заявку
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-2room-3" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title">2-Комнатная "Luxury"</h2>
+      <div class="modal-body">
+        <div class="modal-property">
+          <span class="modal-label">Площадь:</span>
+          <span class="modal-value">95 м²</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Комнаты:</span>
+          <span class="modal-value">2 спальни + гостиная</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Цена:</span>
+          <span class="modal-value">6.5 млн ₽</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Статус:</span>
+          <span class="modal-value" style="color: #856404;">⏳ Бронь</span>
+        </div>
+        <p style="margin-top: 1rem; color: var(--text-gray);">
+          Люкс-апартамент с двумя огромными спальнями и изолированной рабочей зоной. 
+          Панорамные окна, премиум отделка, встроенная мебель.
+        </p>
+        <button class="btn btn-primary" onclick="alert('Свяжитесь с менеджером: +7 (999) 123-45-67')" style="width: 100%; margin-top: 1.5rem;">
+          Хочу обсудить деталь
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3-КОМНАТНЫЕ -->
+  <div id="modal-3room-1" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title">3-Комнатная "Family"</h2>
+      <div class="modal-body">
+        <div class="modal-property">
+          <span class="modal-label">Площадь:</span>
+          <span class="modal-value">110 м²</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Комнаты:</span>
+          <span class="modal-value">3 спальни + гостиная</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Цена:</span>
+          <span class="modal-value">7.5 млн ₽</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Статус:</span>
+          <span class="modal-value" style="color: #155724;">✓ В наличии</span>
+        </div>
+        <p style="margin-top: 1rem; color: var(--text-gray);">
+          Просторная семейная квартира с тремя отдельными спальнями. 
+          Идеальна для семей с детьми, с современной кухней и гостевым санузлом.
+        </p>
+        <button class="btn btn-primary" onclick="alert('Свяжитесь с менеджером: +7 (999) 123-45-67')" style="width: 100%; margin-top: 1.5rem;">
+          Хочу обсудить деталь
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-3room-2" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title">3-Комнатная "Premium"</h2>
+      <div class="modal-body">
+        <div class="modal-property">
+          <span class="modal-label">Площадь:</span>
+          <span class="modal-value">120 м²</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Комнаты:</span>
+          <span class="modal-value">3 спальни + гостиная</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Цена:</span>
+          <span class="modal-value">8.2 млн ₽</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Статус:</span>
+          <span class="modal-value" style="color: #155724;">✓ В наличии</span>
+        </div>
+        <p style="margin-top: 1rem; color: var(--text-gray);">
+          Премиум трёхкомнатная квартира повышенного комфорта. 
+          Три спальни, два санузла, просторная кухня-гостиная.
+        </p>
+        <button class="btn btn-primary" onclick="alert('Свяжитесь с менеджером: +7 (999) 123-45-67')" style="width: 100%; margin-top: 1.5rem;">
+          Хочу обсудить деталь
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-3room-3" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title">3-Комнатная "Elite"</h2>
+      <div class="modal-body">
+        <div class="modal-property">
+          <span class="modal-label">Площадь:</span>
+          <span class="modal-value">130 м²</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Комнаты:</span>
+          <span class="modal-value">3 спальни + гостиная</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Цена:</span>
+          <span class="modal-value">8.9 млн ₽</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Статус:</span>
+          <span class="modal-value" style="color: #721c24;">✗ Продано</span>
+        </div>
+        <p style="margin-top: 1rem; color: var(--text-gray);">
+          Элитная трёхкомнатная квартира максимального комфорта. 
+          Три просторные спальни, две ванные комнаты, панорамный вид.
+        </p>
+        <button class="btn btn-secondary" onclick="alert('К сожалению, квартира уже продана.')" style="width: 100%; margin-top: 1.5rem;">
+          Предложить альтернативу
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ПЕНТХАУСЫ -->
+  <div id="modal-penthouse-1" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title">Пентхаус "Signature"</h2>
+      <div class="modal-body">
+        <div class="modal-property">
+          <span class="modal-label">Площадь:</span>
+          <span class="modal-value">140 м² + терраса 60 м²</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Комнаты:</span>
+          <span class="modal-value">3 спальни + гостиная</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Цена:</span>
+          <span class="modal-value">11.5 млн ₽</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Статус:</span>
+          <span class="modal-value" style="color: #155724;">✓ В наличии</span>
+        </div>
+        <p style="margin-top: 1rem; color: var(--text-gray);">
+          Эксклюзивный пентхаус на верхних этажах с огромной панорамной террасой. 
+          Огромная гостиная, панорамные окна, премиум отделка класса люкс.
+        </p>
+        <button class="btn btn-primary" onclick="alert('Свяжитесь с менеджером: +7 (999) 123-45-67')" style="width: 100%; margin-top: 1.5rem;">
+          Хочу обсудить деталь
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-penthouse-2" class="modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <h2 class="modal-title">Пентхаус "Royal"</h2>
+      <div class="modal-body">
+        <div class="modal-property">
+          <span class="modal-label">Площадь:</span>
+          <span class="modal-value">150 м² + терраса 70 м²</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Комнаты:</span>
+          <span class="modal-value">3 спальни + гостиная</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Цена:</span>
+          <span class="modal-value">12.9 млн ₽</span>
+        </div>
+        <div class="modal-property">
+          <span class="modal-label">Статус:</span>
+          <span class="modal-value" style="color: #856404;">⏳ Бронь</span>
+        </div>
+        <p style="margin-top: 1rem; color: var(--text-gray);">
+          Королевский пентхаус наивысшего класса с самой большой террасой. 
+          Эксклюзивный панорамный вид на город, премиум отделка и системы.
+        </p>
+        <button class="btn btn-primary" onclick="alert('Свяжитесь с менеджером: +7 (999) 123-45-67')" style="width: 100%; margin-top: 1.5rem;">
+          Хочу обсудить деталь
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ФУТЕР -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ManliHouse</h3>
+          <p>Жилой комплекс нового поколения, созданный для комфортной и безопасной жизни вашей семьи.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Быстрые ссылки</h3>
+          <div class="footer-links">
+            <a href="index.html#home">Главная</a>
+            <a href="index.html#about">О комплексе</a>
+            <a href="layouts.html">Планировки</a>
+            <a href="index.html#construction">Ход строительства</a>
+            <a href="index.html#contacts">Контакты</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Контактная информация</h3>
+          <div class="footer-contact">
+            <div class="contact-item">
+              <span>📞</span>
+              <div>
+                <p><a href="tel:+373067807807">+373 (067) 807-807</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span>📧</span>
+              <div>
+                <p><a href="mailto:info@manlihouse.md">info@manlihouse.md</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span>📍</span>
+              <div>
+                <p>Чадыр-Лунга<br>Гагаузия, Молдова</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 MANLIHOUSE. Все права защищены. 📱 <a href="https://www.instagram.com/manlihouse2025/" target="_blank" style="color: var(--white);">@manlihouse2025</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ПОДКЛЮЧЕНИЕ СКРИПТОВ -->
+  <script src="js/main.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/timeline.js"></script>
+  <script src="js/form-validator.js"></script>
+</body>
+</html>

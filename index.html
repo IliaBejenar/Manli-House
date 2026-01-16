@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ManliHouse - элитный жилой комплекс нового поколения. Инвестируйте в качество жизни!">
+  <title>ManliHouse - Жилой комплекс нового поколения</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- ЗАГОЛОВОК И НАВИГАЦИЯ -->
+  <header>
+    <div class="header-container">
+      <div class="logo">ManliHouse</div>
+      <button class="nav-toggle">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Главная</a></li>
+          <li><a href="index.html#about">О комплексе</a></li>
+          <li><a href="layouts.html">Планировки</a></li>
+          <li><a href="index.html#construction">Ход строительства</a></li>
+          <li><a href="index.html#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ГЛАВНЫЙ БАННЕР -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>MANLIHOUSE</h1>
+        <p>Современный жилой комплекс премиум-класса в сердце города</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' })">Узнать подробнее</button>
+          <a href="layouts.html" class="btn btn-secondary">Посмотреть квартиры</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- СЛАЙДЕР С ВИЗУАЛИЗАЦИЯМИ -->
+    <section class="container" style="padding: 3rem 0;">
+      <h2>Галерея проекта</h2>
+      <div class="slider">
+        <div class="slider-container">
+          <img src="img/1 (1).png" alt="Визуализация 1" class="slider-item active">
+          <img src="img/2 (1).png" alt="Визуализация 2" class="slider-item">
+          <img src="img/3 (1).png" alt="Визуализация 3" class="slider-item">
+          <img src="img/4 (1).png" alt="Визуализация 4" class="slider-item">
+          <img src="img/5 (1).png" alt="Визуализация 5" class="slider-item">
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn">❮</button>
+          <button class="slider-btn">❯</button>
+        </div>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- О КОМПЛЕКСЕ -->
+    <section class="alternate" id="about">
+      <div class="container">
+        <h2>О комплексе</h2>
+        
+        <div style="margin-bottom: 3rem;">
+          <h3>Жилой комплекс премиум-класса</h3>
+          <p class="fade-in">
+            MANLIHOUSE — современный жилой комплекс премиум-класса, расположенный в сердце города Чадыр-Лунга, Гагаузия, Молдова. 
+            Проект разработан с использованием передовых архитектурных решений и современных строительных технологий, 
+            создавая идеальное пространство для комфортной жизни.
+          </p>
+          <p class="fade-in">
+            Строительство начинается весной 2025 года и завершается в 3-4 квартале 2027 года. 
+            Каждая квартира рассчитана на высокие стандарты качества с современной инженерной инфраструктурой.
+            Площади: от 49 м² до 150 м². Цена: 910 евро/м².
+          </p>
+        </div>
+
+        <!-- ИНФОГРАФИКА -->
+        <div class="infographic fade-in">
+          <div class="info-item">
+            <div class="info-number">9</div>
+            <div class="info-label">Этажей</div>
+            <p>Оптимальная высота зданий</p>
+          </div>
+          <div class="info-item">
+            <div class="info-number">2</div>
+            <div class="info-label">Корпуса</div>
+            <p>Просторная территория</p>
+          </div>
+          <div class="info-item">
+            <div class="info-number">100+</div>
+            <div class="info-label">Квартир</div>
+            <p>Студии и апартаменты</p>
+          </div>
+          <div class="info-item">
+            <div class="info-number">25-180</div>
+            <div class="info-label">м²</div>
+            <p>Разнообразие планировок</p>
+          </div>
+        </div>
+
+        <!-- ПРЕИМУЩЕСТВА -->
+        <h3 style="margin-top: 3rem; margin-bottom: 2rem;">Преимущества комплекса</h3>
+        <div class="cards-grid">
+          <div class="card fade-in">
+            <div class="card-image">🔒</div>
+            <div class="card-content">
+              <div class="card-title">Безопасность</div>
+              <p class="card-text">Круглосуточная охрана, видеонаблюдение, контролируемый доступ во все зоны.</p>
+            </div>
+          </div>
+          <div class="card fade-in">
+            <div class="card-image">🌿</div>
+            <div class="card-content">
+              <div class="card-title">Экология</div>
+              <p class="card-text">Озеленённая территория, парк с пешеходными дорожками и зонами отдыха.</p>
+            </div>
+          </div>
+          <div class="card fade-in">
+            <div class="card-image">🏋️</div>
+            <div class="card-content">
+              <div class="card-title">Инфраструктура</div>
+              <p class="card-text">Спортзал, бассейн, сауна, детский сад и игровые площадки.</p>
+            </div>
+          </div>
+          <div class="card fade-in">
+            <div class="card-image">⚡</div>
+            <div class="card-content">
+              <div class="card-title">"Умный дом"</div>
+              <p class="card-text">Система управления климатом, освещением и безопасностью через смартфон.</p>
+            </div>
+          </div>
+          <div class="card fade-in">
+            <div class="card-image">🏪</div>
+            <div class="card-content">
+              <div class="card-title">Торговля</div>
+              <p class="card-text">Встроенные магазины, кафе, ресторан, салоны красоты и салон здоровья.</p>
+            </div>
+          </div>
+          <div class="card fade-in">
+            <div class="card-image">🚗</div>
+            <div class="card-content">
+              <div class="card-title">Транспорт</div>
+              <p class="card-text">Удобное расположение, близость к метро, автобусным остановкам.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ХОД СТРОИТЕЛЬСТВА -->
+    <section id="construction">
+      <div class="container">
+        <h2>Ход строительства</h2>
+        
+        <div class="timeline fade-in">
+          <div class="timeline-items">
+            <div class="timeline-item" data-timeline="timeline-2024">
+              <h4 class="timeline-month">2024</h4>
+              <p>Подготовка</p>
+            </div>
+            <div class="timeline-item" data-timeline="timeline-2025-1">
+              <h4 class="timeline-month">Янв-Июн 2025</h4>
+              <p>Этап 1</p>
+            </div>
+            <div class="timeline-item" data-timeline="timeline-2025-2">
+              <h4 class="timeline-month">Июл-Дек 2025</h4>
+              <p>Этап 2</p>
+            </div>
+            <div class="timeline-item" data-timeline="timeline-2026">
+              <h4 class="timeline-month">2026</h4>
+              <p>Завершение</p>
+            </div>
+          </div>
+
+          <!-- СОДЕРЖИМОЕ ТАЙМЛАЙНА -->
+          <div id="timeline-2024" class="timeline-content">
+            <h4>Подготовка и старт строительства (2024)</h4>
+            <p>Подготовка площадки, оформление всех необходимых разрешений, начало земляных работ.</p>
+            <div class="timeline-images">
+              <div class="timeline-img">📋 Проектирование</div>
+              <div class="timeline-img">🏗️ Подготовка</div>
+            </div>
+          </div>
+
+          <div id="timeline-2025-1" class="timeline-content">
+            <h4>Первый этап (Январь - Июнь 2025)</h4>
+            <p>Возведение фундамента и несущих конструкций первого корпуса.</p>
+            <div class="timeline-images">
+              <div class="timeline-img">🏗️ Фундамент</div>
+              <div class="timeline-img">🏢 Несущие конструкции</div>
+              <div class="timeline-img">⚙️ Инженерные сети</div>
+            </div>
+          </div>
+
+          <div id="timeline-2025-2" class="timeline-content">
+            <h4>Второй этап (Июль - Декабрь 2025)</h4>
+            <p>Завершение кровли, начало отделочных работ, монтаж систем.  </p>
+            <div class="timeline-images">
+              <div class="timeline-img">🔧 Отделка</div>
+              <div class="timeline-img">🪟 Остекление</div>
+              <div class="timeline-img">⚡ Электромонтаж</div>
+            </div>
+          </div>
+
+          <div id="timeline-2026" class="timeline-content">
+            <h4>Завершение (2026)</h4>
+            <p>Финальная отделка, внутреннее благоустройство, сдача объекта.</p>
+            <div class="timeline-images">
+              <div class="timeline-img">🎨 Благоустройство</div>
+              <div class="timeline-img">🌳 Озеленение</div>
+              <div class="timeline-img">✓ Сдача объекта</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ И ФОРМА -->
+    <section class="alternate" id="contacts">
+      <div class="container">
+        <h2>Контакты и обратная связь</h2>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem;" class="fade-in">
+          <!-- ИНФОРМАЦИЯ О КОНТАКТАХ -->
+          <div>
+            <h3>Связаться с нами</h3>
+            <div style="margin: 2rem 0;">
+              <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">📞 Телефон</h4>
+              <p><a href="tel:+373067807807">+373 (067) 807-807</a></p>
+            </div>
+            <div style="margin: 2rem 0;">
+              <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">📧 Email</h4>
+              <p><a href="mailto:info@manlihouse.md">info@manlihouse.md</a></p>
+              <p><a href="https://www.instagram.com/manlihouse2025/" target="_blank">📱 Instagram: @manlihouse2025</a></p>
+            </div>
+            <div style="margin: 2rem 0;">
+              <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">📍 Адрес</h4>
+              <p>г. Чадыр-Лунга<br>Гагаузия, Молдова<br>Офис продаж: пн-сб 10:00 - 18:00</p>
+            </div>
+            <div style="margin-top: 3rem;">
+              <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Карта проекта</h4>
+              <iframe 
+                width="100%" 
+                height="300" 
+                style="border-radius: 8px; border: none;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2722.1234567890123!2d28.82567890123456!3d46.23345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c1234567890abc%3A0x1234567890abcdef!2sChad%C4%ABr-Lunga%2C%20Gagauzia%2C%20Moldova!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+
+          <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
+          <div>
+            <h3>Оставить запрос</h3>
+            <form id="contactForm" style="margin-top: 1.5rem;">
+              <div class="form-group">
+                <label for="name">Ваше имя *</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  placeholder="Иван Иванов"
+                  required
+                >
+                <div class="error-message"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Номер телефона *</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  placeholder="+373 (123) 456-789"
+                  required
+                >
+                <div class="error-message"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email (опционально)</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  placeholder="example@mail.com"
+                >
+                <div class="error-message"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Ваше сообщение *</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  placeholder="Расскажите о ваших пожеланиях..."
+                  required
+                ></textarea>
+                <div class="error-message"></div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+                Отправить запрос
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ФУТЕР -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ManliHouse</h3>
+          <p>Жилой комплекс нового поколения, созданный для комфортной и безопасной жизни вашей семьи.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Быстрые ссылки</h3>
+          <div class="footer-links">
+            <a href="#home">Главная</a>
+            <a href="#about">О комплексе</a>
+            <a href="layouts.html">Планировки</a>
+            <a href="#construction">Ход строительства</a>
+            <a href="#contacts">Контакты</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Контактная информация</h3>
+          <div class="footer-contact">
+            <div class="contact-item">
+              <span>📞</span>
+              <div>
+                <p><a href="tel:+373067807807">+373 (067) 807-807</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span>📧</span>
+              <div>
+                <p><a href="mailto:info@manlihouse.md">info@manlihouse.md</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span>📍</span>
+              <div>
+                <p>Чадыр-Лунга, Гагаузия<br>Молдова</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 MANLIHOUSE. Все права защищены. 📱 <a href="https://www.instagram.com/manlihouse2025/" target="_blank" style="color: var(--white);">@manlihouse2025</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ПОДКЛЮЧЕНИЕ СКРИПТОВ -->
+  <script src="js/main.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/timeline.js"></script>
+  <script src="js/form-validator.js"></script>
+</body>
+</html>
